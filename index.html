@@ -26,22 +26,24 @@
               <div class="search-link">
               </div>
               <form class="header-search-form" action="https://echo.htmlacademy.ru" method="post" aria-label="Поиск по сайту">
-                  <label class="visually-hidden" for="header-search">Ввод данных для поиска</label>
-                  <input type="search" name="search" id="header-search" placeholder="Что ищем?">
+                  <div class="form-field">
+                      <label class="visually-hidden" for="header-search">Ввод данных для поиска</label>
+                      <input type="search" name="search" id="header-search" placeholder="Что ищем?">
+                  </div>
               </form>
               
               <ul class="user-navigation">
                   <li class="login-link">Вход</li>
               </ul>
               <form class="header-login-form" action="https://echo.htmlacademy.ru" method="post" aria-label="Вход в личный кабинет">
-                  <p>
+                  <div class="form-field">
                       <label class="visually-hidden" for="header-login-email">Электроннная почта</label>
                       <input type="email" name="email" id="header-login-email" placeholder="Электронная почта">
-                  </p>
-                  <p>
+                  </div>
+                  <div class="form-field">
                       <label class="visually-hidden" for="header-login-password">Пароль</label>
                       <input type="password" name="password" id="header-login-password" placeholder="Пароль">
-                  </p>
+                  </div>
                   <button class="button" type="submit">Войти</button>
                   <a class="form-link" href="#">Забыли пароль?</a>
                   <a class="form-link" href="#">Новая регистрация</a>
@@ -201,18 +203,18 @@
           <h2 class="visually-hidden">Обратная связь</h2>
           <p>Мы обязательно Вам ответим!</p>
           <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-              <p>
+              <div class="form-field">
                   <label class="visually-hidden" for="feedback-name">Ваше имя</label>
                   <input type="text" name="name" id="feedback-name" placeholder="Как вас зовут?">
-              </p>
-              <p>
+              </div>
+              <div class="form-field">
                   <label class="visually-hidden">Ваша почта для ответа</label>
                   <input type="email" name="email" id="feedback-email" placeholder="Ваша почта для ответа?">
-              </p>
-              <p>
+              </div>
+              <div>
                   <label class="visually-hidden" for="feedback-text">Текст вашего обращения</label>
                   <textarea name="text" id="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
-              </p>
+              </div>
               <button class="button" type="submit">Отправить</button>
           </form>
           <button class="modal-close" type="button">Закрыть</button>
