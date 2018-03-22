@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+      <meta charset="utf-8">
+      <title>HTML Academy: Глейси</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       <header class="main-header">
@@ -66,28 +69,31 @@
           
           <section class="slider">
               <div class="slider-container slider-image1">
+                  <p>Крем-брюле и пломбир с малиновым джемом</p>
               </div>
               <div class="slider-container slider-image2">
+                  <p>Шоколадный пломбир и лимонный сорбет</p>
               </div>
               <div class="slider-container slider-image3">
+                  <p>Пломбир с помадкой и клубничный щербет</p>
               </div>
-              <button class="slider-switch slider-switch-current" type="button"></button>
-              <button class="slider-switch" type="button"></button>
-              <button class="slider-switch" type="button"></button>
-              <a class="button">Давайте оба!</a>
+              <button class="slider-switch slider-switch-current" type="button">Слайдер 1</button>
+              <button class="slider-switch" type="button">Слайдер 2</button>
+              <button class="slider-switch" type="button">Слайдер 3</button>
+              <a class="button slider-button" href="#">Давайте оба!</a>
           </section>
           
           <section class="promo">
               <h2 class="visually-hidden">Акции</h2>
               <ul class="promo-list">
-                  <li class="promo-item">
+                  <li class="promo-item promo-raspberry">
                       <h3>Малинка даром!</h3>
-                      <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                      <p class="promo-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
                       <a class="button" href="#">Хочу варенье!</a>
                   </li>
-                  <li class="promo-item">
+                  <li class="promo-item promo-chocolate">
                       <h3>Шоколадки даром!</h3>
-                      <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+                      <p class="promo-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
                       <a class="button" href="#">Хочу шоколадки!</a>
                   </li>
               </ul>
@@ -96,28 +102,32 @@
           <section class="catalog">
               <h2 class="visually-hidden">Популярные товары</h2>
               <ul class="catalog-list">
-                  <li class="catalog-item popular-item">
+                  <li class="catalog-item">
+                      <div class="popular-item"></div>
                       <img src="img/orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом">
                       <a class="link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-                      <p><span class="price">310&#8381;</span><span class="weight">/кг</span></p>
+                      <p><span class="price">310 &#8381;</span><span class="weight">/кг</span></p>
                       <a class="button" href="#">Быстрый просмотр</a>
                   </li>
-                  <li class="catalog-item popular-item">
+                  <li class="catalog-item">
+                      <div class="popular-item"></div>
                       <img src="img/coffee.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                       <a class="link" href="#">Сливочно-кофейное с кусочками шоколада</a>
-                      <p><span class="price">380&#8381;</span><span class="weight">/кг</span></p>
+                      <p><span class="price">380 &#8381;</span><span class="weight">/кг</span></p>
                       <a class="button" href="#">Быстрый просмотр</a>
                   </li>
-                  <li class="catalog-item popular-item">
+                  <li class="catalog-item">
+                      <div class="popular-item"></div>
                       <img src="img/strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                       <a class="link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-                      <p><span class="price">355&#8381;</span><span class="weight">/кг</span></p>
+                      <p><span class="price">355 &#8381;</span><span class="weight">/кг</span></p>
                       <a class="button" href="#">Быстрый просмотр</a>
                   </li>
-                  <li class="catalog-item popular-item">
+                  <li class="catalog-item">
+                      <div class="popular-item"></div>
                       <img src="img/creme-brulee.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                       <a class="link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
-                      <p><span class="price">415&#8381;</span><span class="weight">/кг</span></p>
+                      <p><span class="price">415 &#8381;</span><span class="weight">/кг</span></p>
                       <a class="button" href="#">Быстрый просмотр</a>
                   </li>
               </ul>
@@ -164,13 +174,13 @@
                       <p>
                           Адрес главного офиса<br>
                           и офлайн-магазина<br>
-                          <b>ул. Большая Конюшенная<br>
+                          <b class="addressphone">ул. Большая Конюшенная<br>
                               19/8, Санкт-Петербург
                           </b>
                       </p>
                       <p>
                           Для заказов по телефону:<br>
-                          <b>8 812 450-25-25</b><br>
+                          <b class="addressphone">8 812 450-25-25</b><br>
                           (с 10 до 20 ежедневно)
                       </p>
                       <a class="button" href="#">Форма обратной связи</a>
@@ -188,7 +198,7 @@
               <li><a class="social-button" href="#">Вконтакте</a></li>
           </ul>
           <ul class="footer-links">
-              <li><a class="link" href="#">Для поставщиков</a></li>
+              <li><a class="link" href="#"><b>Для поставщиков</b></a></li>
               <li><a class="link" href="#">Наши документы</a></li>
               <li><a class="link" href="#">О производстве</a></li>
               <li><a class="link" href="#">Экологические стандарты</a></li>
@@ -201,7 +211,7 @@
       
       <section class= "modal modal-feedback">
           <h2 class="visually-hidden">Обратная связь</h2>
-          <p>Мы обязательно Вам ответим!</p>
+          <p class="modal-feedback-header">Мы обязательно Вам ответим!</p>
           <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="form-field">
                   <label class="visually-hidden" for="feedback-name">Ваше имя</label>
