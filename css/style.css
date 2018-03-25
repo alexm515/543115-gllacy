@@ -60,6 +60,14 @@ body {
     color: #323232;
 }
 
+.header-search-form input,
+.header-login-form input {
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+}
+
 .header-login-form .form-link {
     color: #323232;
     font-size: 13px;
@@ -265,17 +273,30 @@ body {
     font-weight: normal;
 }
 
-.contacts .contacts-info {
-    color: #323232;
-    font-size: 14px;
-    line-height: 22px;
+.subscribe-form input {
+    color: #999999;
+    font-size: 16px;
+    line-height: 24px;
     font-weight: normal;
 }
 
-.contacts .addressphone {
+.contacts .contacts-info {
+    color: #323232;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+.contacts-info .info-address {
     color: #323232;
     font-size: 18px;
     line-height: 24px;
+}
+
+.contacts-info .info-phone {
+    color: #323232;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .main-footer .footer-social,
@@ -315,6 +336,14 @@ body {
     font-size: 24px;
     line-height: 28px;
     font-weight: 500;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    color: #999999;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
 }
 
 /* Каталог */
@@ -377,6 +406,12 @@ body {
 
 .filters-form .fieldset-list {
     list-style: none;
+}
+
+.filters-form label {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
 }
 
 .filters-form .fieldheader {
