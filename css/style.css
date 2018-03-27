@@ -20,10 +20,48 @@ body {
     overflow: hidden;
 }
 
+.container {
+    width: 1146px;
+    margin: 0 27px;
+}
+
+.main-header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
 .main-nav .site-navigation,
 .main-nav .site-navigation-submenu,
 .main-nav .user-navigation {
     list-style: none;
+}
+
+.main-nav .logo {
+    margin-right: 25px;
+}
+
+.main-nav .site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    width: 550px;
+    margin-right: auto;
+}
+
+.site-navigation li {
+    margin-right: 29px;
+}
+
+.main-nav .site-navigation-submenu {
+    display: none;
 }
 
 .link {
@@ -49,11 +87,34 @@ body {
     font-weight: bold;
 }
 
+.main-nav .search-link {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main-nav .header-search-form {
+    display: none;
+}
+
 .main-nav .login-link,
 .main-nav .shop-cart-link {
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
+}
+
+.main-nav .user-navigation {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav .login-link {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 17px;
+    border-radius: 20px;
 }
 
 .main-nav .login-link:hover {
@@ -68,6 +129,10 @@ body {
     font-weight: normal;
 }
 
+.main-nav .header-login-form {
+    display: none;
+}
+
 .header-login-form .form-link {
     color: #323232;
     font-size: 13px;
@@ -78,6 +143,26 @@ body {
 .header-login-form .form-link:hover,
 .header-login-form .form-link:focus {
     color: #e84d37;
+}
+
+.main-nav .shop-cart-link > p {
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav .shop-cart-link {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 17px;
+    padding-right: 35px;
+    border-radius: 20px;
+}
+
+.main-nav .header-wrapper {
+    display: flex;
+}
+
+.main-nav .header-wrapper-item {
+    margin-left: 10px;
 }
 
 .button {
@@ -92,12 +177,12 @@ body {
     color: #fceeec;
 }
 
-.main-nav .shedule {
+.main-header .shedule {
     font-size: 14px;
     line-height: 16px;
 }
 
-.main-nav .phone {
+.main-header .phone {
     font-size: 22px;
     line-height: 24px;
 }
@@ -135,6 +220,11 @@ body {
 
 .promo .promo-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .promo .promo-item > h3 {
@@ -165,6 +255,21 @@ body {
 
 .catalog .catalog-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.catalog-item p {
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-item {
+    width: 267px;
 }
 
 .catalog-item .link {
@@ -211,10 +316,18 @@ body {
     background-image: url("../img/wafer_bg.jpg");
     background-repeat: repeat;
     border-radius: 10px;
+    margin-bottom: 40px;
 }
 
 .features .features-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: inherit;
+    align-content: space-around;
 }
 
 .features > h2 {
@@ -228,6 +341,13 @@ body {
     color: #323232;
     line-height: 22px;
     font-weight: normal;
+    width: 485px;
+}
+
+.blog-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .blog-item {
@@ -299,19 +419,43 @@ body {
     line-height: 22px;
 }
 
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .main-footer .footer-social,
 .main-footer .footer-links {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-footer .footer-social,
+.main-footer .footer-copyright {
+    width: 267px;
+}
+
+.main-footer .footer-links {
+    flex-direction: column;
+    width: 560px;
+    height: 45px;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .main-footer .social-button {
     color: #ffffff;
+    margin-right: 11px;
 }
 
 .footer-links .link {
     font-size: 13px;
     line-height: 18px;
     font-weight: normal;
+    
 }
 
 .footer-copyright,
@@ -356,6 +500,10 @@ body {
     color: #323232;
 }
 
+.shop-cart {
+    display: none;
+}
+
 .shop-cart .shop-cart-list {
     list-style: none;
 }
@@ -377,35 +525,63 @@ body {
     line-height: 18px;
 }
 
-.container .page-title {
+.page-title {
     font-size: 35px;
     line-height: 41px;
+    margin: 0;
+    padding: 0;
 }
 
-.container .breadcrumbs {
+.breadcrumbs-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 33px;
+}
+
+.breadcrumbs {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 880px;
+    justify-content: flex-start;
+    margin-bottom: 5px;
 }
 
-.container .breadcrumbs-item,
-.container .breadcrumbs-item > a {
+.breadcrumbs-item,
+.breadcrumbs-item > a {
     color: #ffffff;
     font-size: 14px;
     line-height: 16px;
     font-weight: normal;
+    margin-right: 22px;
 }
 
-.container .breadcrumbs-item > a:hover,
-.container .breadcrumbs-item > a:focus {
+.breadcrumbs-item > a:hover,
+.breadcrumbs-item > a:focus {
     color: #ffbc9e;
 }
 
 .filters .filters-form {
     line-height: 18px;
     font-weight: 500;
+    display: flex;
+    width: 880px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.filters .filters-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .filters-form .fieldset-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .filters-form label {
@@ -430,8 +606,17 @@ body {
     color: #323232;
 }
 
+.catalog-creamy-page .catalog-list {
+    margin-bottom: 80px;
+}
+
 .catalog .pagination-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
 }
 
 .catalog .pagination-list a {
@@ -442,6 +627,7 @@ body {
 
 .catalog .pagination-item > a {
     color: #ffffff;
+    margin-left: 21px;
 }
 
 .catalog .pagination-item-current > a {
