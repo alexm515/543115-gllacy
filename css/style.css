@@ -9,6 +9,13 @@ body {
     background-color: #849d8f;
 }
 
+.main-background {
+    background-color: #849d8f;
+    background-image: url("../img/bg1.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -22,19 +29,21 @@ body {
 
 .container {
     width: 1146px;
-    margin: 0 27px;
+    margin: 0 auto;
+    /*padding: 0 27px;*/
 }
 
-.main-header {
+/*.main-header {
     width: 100%;
     padding: 0;
     margin: 0;
-}
+}*/
 
 .main-nav {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    padding-top: 10px;
+    flex-wrap: wrap;
 }
 
 .main-nav .site-navigation,
@@ -177,20 +186,27 @@ body {
     color: #fceeec;
 }
 
-.main-header .shedule {
+.header-info .shedule {
     font-size: 14px;
     line-height: 16px;
+    text-align: right;
+    margin: 0;
 }
 
-.main-header .phone {
+.header-info .phone {
     font-size: 22px;
     line-height: 24px;
+    text-align: right;
+    margin: 0;
 }
 
-.slider-container {
+.main-header .header-info {
+    margin-bottom: 260px;
+}
+
+/*.slider-container {
     width: 1045px;
     height: 881px;
-    background-color: #849d8f;
 }
 
 .slider-container p {
@@ -198,22 +214,51 @@ body {
     line-height: 60px;
 } 
 
-.slider .slider-image1 {
+.slider-image1 {
     background-image: url("../img/bg1.png");
     background-repeat: no-repeat;
+    background-position: 50% 0;
 }
 
-.slider .slider-image2 {
+.slider-image2 {
     background-image: url("../img/bg2.png");
     background-repeat: no-repeat;
 }
 
-.slider .slider-image3 {
+.slider-image3 {
     background-image: url("../img/bg3.png");
     background-repeat: no-repeat;
 }
 
 .slider-button {
+    font-size: 32px;
+    line-height: 44px;
+}*/
+
+.slider {
+    margin-bottom: 40px;
+}
+
+.slider .slider-name {
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.slider .slider-controls {
+    display: inline-block;
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.slider-button {
+    display: inline-block;
     font-size: 32px;
     line-height: 44px;
 }
@@ -398,6 +443,15 @@ body {
     font-size: 16px;
     line-height: 24px;
     font-weight: normal;
+}
+
+.contacts {
+    width: 100%;
+    min-height: 430px;
+    background-image: url("../img/map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
 }
 
 .contacts .contacts-info {

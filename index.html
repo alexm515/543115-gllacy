@@ -8,8 +8,10 @@
       <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-      <header class="main-header">
-          <nav class="main-nav container">
+      <div class="main-background">
+         
+      <header class="main-header container">
+          <nav class="main-nav">
               <img class="logo" src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy">
               <ul class="site-navigation">
                   <li>
@@ -57,19 +59,18 @@
                       <p>Пусто</p>
                   </div>
               </div>
-           </nav>
-          
-              <p class="shedule">
-                  С 10 до 20 ежедневно
-                  <span class="phone">8 812 450-25-25</span>
-              </p>
+          </nav>
+          <div class="header-info">
+              <p class="shedule">С 10 до 20 ежедневно</p>
+              <p class="phone">8 812 450-25-25</p>
+          </div>
       </header>
       
-      <main class="container">
+      <main>
           
           <h1 class="visually-hidden">Магазин мороженого Глэйси</h1>
           
-          <section class="slider">
+          <!--<section class="slider">
               <div class="slider-container slider-image1">
                   <p>Крем-брюле и пломбир с малиновым джемом</p>
               </div>
@@ -83,9 +84,22 @@
               <button class="slider-switch" type="button">Слайдер 2</button>
               <button class="slider-switch" type="button">Слайдер 3</button>
               <a class="button slider-button" href="#">Давайте оба!</a>
+          </section>-->
+          
+          <section class="slider container">
+              <p class="slider-name">Крем-брюле и пломбир с малиновым джемом</p>
+              <input class="visually-hidden" type="radio" id="btn-1" name="toggle">
+              <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
+              <input class="visually-hidden" type="radio" id="btn-3" name="toggle">
+              <div class="slider-controls">
+                  <label for="btn-1"></label>
+                  <label for="btn-2"></label>
+                  <label for="btn-3"></label>
+              </div>
+              <a class="button slider-button" href="#">Давайте оба!</a>
           </section>
           
-          <section class="promo">
+          <section class="promo container">
               <h2 class="visually-hidden">Акции</h2>
               <ul class="promo-list">
                   <li class="promo-item promo-raspberry">
@@ -101,7 +115,7 @@
               </ul>
           </section>
           
-          <section class="catalog">
+          <section class="catalog container">
               <h2 class="visually-hidden">Популярные товары</h2>
               <ul class="catalog-list">
                   <li class="catalog-item">
@@ -135,7 +149,7 @@
               </ul>
           </section>
           
-          <section class="features">
+          <section class="features container">
               <h2>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
               <ul class="features-list">
                   <li class="feature-item">
@@ -153,7 +167,7 @@
               </ul>
           </section>
           
-          <div class="blog-wrapper">
+          <div class="blog-wrapper container">
               <article class="blog-item">
                   <h2 class="visually-hidden">Блог</h2>
                   <h3>Новое в нашем блоге</h3>
@@ -173,24 +187,22 @@
           
           
           <section class="contacts">
-              <div class="map">
-                  <img src="img/map.jpg" width="1200" height="430" alt="Расположение на карте">
-                  <section class="contacts-info">
-                      <p>
-                          Адрес главного офиса<br>
-                          и офлайн-магазина<br>
-                          <b class="info-address">ул. Большая Конюшенная<br>
-                              19/8, Санкт-Петербург
-                          </b>
-                      </p>
-                      <p>
-                          Для заказов по телефону:<br>
-                          <b class="info-phone">8 812 450-25-25</b><br>
-                          (с 10 до 20 ежедневно)
-                      </p>
-                      <a class="button" href="#">Форма обратной связи</a>
-                  </section>
-              </div>
+              <section class="contacts-info">
+                  <p>
+                      Адрес главного офиса<br>
+                      и офлайн-магазина<br>
+                      <b class="info-address">ул. Большая Конюшенная<br>
+                          19/8, Санкт-Петербург
+                      </b>
+                  </p>
+                  <p>
+                      Для заказов по телефону:<br>
+                      <b class="info-phone">8 812 450-25-25</b><br>
+                      (с 10 до 20 ежедневно)
+                  </p>
+                  <a class="button" href="#">Форма обратной связи</a>
+              </section>
+              
           </section>
           
       </main>
@@ -215,6 +227,7 @@
               <p>Сделано в <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2017</p>
           </div>
       </footer>
+      </div>
       
       <section class= "modal modal-feedback">
           <h2 class="visually-hidden">Обратная связь</h2>
