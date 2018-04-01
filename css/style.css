@@ -30,7 +30,7 @@ body {
 .container {
     width: 1146px;
     margin: 0 auto;
-    /*padding: 0 27px;*/
+    padding: 0 27px;
 }
 
 /*.main-header {
@@ -180,6 +180,8 @@ body {
     line-height: 24px;
     font-weight: bold;
     text-decoration: none;
+    background-image: linear-gradient(#e74a35, #f26843);
+    border-radius: 35px;
 }
 
 .button:active {
@@ -201,7 +203,7 @@ body {
 }
 
 .main-header .header-info {
-    margin-bottom: 260px;
+    margin-bottom: 280px;
 }
 
 /*.slider-container {
@@ -242,10 +244,16 @@ body {
 .slider .slider-name {
     font-size: 60px;
     line-height: 60px;
+    text-align: center;
+    width: 670px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .slider .slider-controls {
     display: inline-block;
+    width: 267px;
+    margin-right: 26px;
 }
 
 .slider-controls label {
@@ -254,13 +262,26 @@ body {
     height: 19px;
     border: 2px solid #ffffff;
     border-radius: 50%;
-    margin-right: 5px;
+    margin-right: 8px;
+}
+
+.slider-controls .current-control {
+    background-color: #ffffff;
+}
+
+.slider .slider-button-wrapper {
+    display: inline-block;
+    width: 560px;
+    text-align: center;
 }
 
 .slider-button {
     display: inline-block;
     font-size: 32px;
     line-height: 44px;
+    padding: 13px 42px;
+    padding-top: 9px;
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
 .promo .promo-list {
@@ -275,27 +296,52 @@ body {
 .promo .promo-item > h3 {
     font-size: 35px;
     line-height: 41px;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 12px;
 }
 
 .promo .promo-item {
     width: 560px;
-    height: 229px;
+    min-height: 229px;
     border-radius: 15px;
+}
+
+.promo-item .promo-button-wrapper {
+    padding-right: 21px;
+    padding-bottom: 23px;
+    text-align: right;
+}
+
+.promo-button-wrapper .button {
+    display: inline-block;
+    padding: 12px 24px;
 }
 
 .promo .promo-raspberry {
     background-image: url("../img/raspberry_bg.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .promo .promo-chocolate {
     background-image: url("../img/chocolate_bg.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .promo .promo-description {
     font-size: 18px;
     line-height: 22px;
+    min-height: 70px;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 15px;
 }
 
 .catalog .catalog-list {
@@ -315,16 +361,24 @@ body {
 
 .catalog-item {
     width: 267px;
+    position: relative;
 }
 
 .catalog-item .link {
+    display: inline-block;
     line-height: 22px;
     font-weight: 500;
+    text-align: center;
 }
 
 .catalog-item .link:hover,
 .catalog-item .link:focus {
     color: #ffbc9e;
+}
+
+.catalog-item p {
+    position: absolute;
+    top: 210px;
 }
 
 .catalog-item .price {
@@ -340,6 +394,7 @@ body {
 }
 
 .catalog-item .popular-item {
+    position: absolute;
     width: 61px;
     height: 61px;
     background-image: url("../img/hit.svg");
@@ -356,23 +411,20 @@ body {
 }
 
 .features {
-    width: 1146px;
-    height: 306px;
+    min-height: 306px;
     background-image: url("../img/wafer_bg.jpg");
     background-repeat: repeat;
     border-radius: 10px;
     margin-bottom: 40px;
+    padding: 0;
 }
 
 .features .features-list {
     list-style: none;
+    padding: 0 21px;
     margin: 0;
-    padding: 0;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    height: inherit;
-    align-content: space-around;
 }
 
 .features > h2 {
@@ -380,13 +432,33 @@ body {
     font-size: 24px;
     line-height: 30px;
     font-weight: 500;
+    padding-top: 25px;
+    padding-left: 21px;
+    padding-right: 21px;
+    margin-bottom: 18px;
 }
 
 .features .feature-item {
+    position: relative;
     color: #323232;
     line-height: 22px;
     font-weight: normal;
-    width: 485px;
+    width: 475px;
+    margin: 0;
+    padding: 0;
+    padding-left: 58px;
+}
+
+features .feature-item::before {
+    content: "";
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    background-image: url("../img/ice-cream.svg");
+}
+
+.features .feature-item:nth-child(4) {
+    width: 470px;
 }
 
 .blog-wrapper {
@@ -690,4 +762,10 @@ body {
 
 .catalog .pagination-item-disabled > a {
     color: #999999;
+}
+
+/*======================================*/
+
+.help {
+    outline: 1px solid red;
 }
